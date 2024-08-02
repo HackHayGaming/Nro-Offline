@@ -19,8 +19,8 @@ echo "\033[1;92mLua chon: \033[1;33m";
       $luachon = trim(fgets(STDIN));
     if ($luachon == 1)  {
     sleep(1);
-  system('pkg install openjdk-17 -y -y && wget -O src.zip  https://github.com/KhanhNguyen9872/Nro-Offline_src/blob/main/src.zip?raw=true && unzip src.zip && clear ');
-system('rm -rf src.zip');
+  system('pkg install openjdk-17 -y -y && wget -O src  cd /sdcard/download/src?raw=true && unzip src && clear ');
+system('rm -rf src');
 system('clear');
     
     sleep(1);
@@ -36,7 +36,7 @@ echo "\033[1;92mNhập Key Để Chạy Server: \033[1;33m";
     if ($makey == $checkkey[0])  {
     sleep(1);
         echo "\033[1;35mKey Dúng Đang chạy server\n";
-system('java -Xms2G  -Xmx2G -jar dist/mad.jar');
+system('java -Xms2G  -Xmx2G -jar dist/HackHayGaming.jar');
         break;
     } else {
         echo "\033[1;91mKey Sai Vui Lòng Lấy Lại\n";
